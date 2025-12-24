@@ -5,7 +5,7 @@ namespace SneakerStoreApp
 {
     class Program
     {
-        // Обновленная строка с вашим новым паролем
+    
         static string connectionString = @"Server=sql.bsite.net\MSSQL2016;Database=osipov_Zhukov;User Id=osipov_Zhukov;Password=12345;TrustServerCertificate=True;";
 
         static void Main(string[] args)
@@ -37,7 +37,7 @@ namespace SneakerStoreApp
                 }
                 catch (SqlException ex)
                 {
-                    // Если пароль 12345 не подходит, ошибка отобразится здесь
+
                     Console.WriteLine($"Ошибка базы данных: {ex.Message}");
                 }
                 catch (Exception ex)
@@ -47,7 +47,7 @@ namespace SneakerStoreApp
             }
         }
 
-        // --- РЕАЛИЗАЦИЯ МЕТОДОВ CRUD ---
+
 
         static void ReadAll()
         {
